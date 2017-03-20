@@ -1,0 +1,321 @@
+/*THIS IS THE DOC YOURE LOOKING FOR  */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+header, section, footer, aside, nav, article, hgroup {
+	display: block;
+}
+
+html {
+	height: 100%;
+	margin: 0;
+
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: lightgrey;
+}
+
+#top_header {
+	background-color: white;
+	display: flex;
+}
+
+/*Erica Zepeda*/
+#name {
+	background-color: #4aaaa5;
+	color: white;
+	width: 280px;
+	padding: 20px;
+	text-align: center;
+	margin-left: 50px;
+	font-size: 30px;
+	font-family: Georgia;
+}
+
+/*nav*/
+#top_menu {
+	display: inline-block;
+	flex: 2;
+	background-color: white;
+	text-align: right;
+	padding: 30px 25px;
+
+}
+
+#top_menu li {
+	display: inline-block;
+	font-family: Helvetica;
+	font-size: 16px;
+	color: grey;
+	padding: 3px;
+}
+
+/*container for WHOLE PAGE*/
+#big_wrapper {
+	flex: box;
+	height: 100%;
+	width: 100%;
+}
+/*container for About Me/Contact/Portfolio*/
+
+#main_section {
+	display: flex;
+	flex-flow: row;
+    
+}
+
+#Box1 {
+	flex: 3;
+	margin: 45px;
+	background-color: white;
+	border-radius: 4px;
+	padding: 15px;
+    
+}
+h2 {
+	padding: 10px 35px;
+	margin: 0;
+	color: #4aaaa5;
+	background-color: white;
+}
+
+hr {
+	border: 1px solid lightgrey;
+}
+
+p { 
+	font-family: Helvetica;
+    color: grey;
+	font-weight: lighter;
+	line-height: 180%;
+	font-size: 16px;
+	padding: 15px;
+
+ }
+
+#Pic {
+	float: left;
+	width: 220px;
+	height: 160px;
+	margin-right: 10px;
+}
+
+.Columns {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    border: 2px solid grey;
+    justify-content: center;
+}
+
+#PortPic {
+    padding: 5px;
+    position: relative;
+}
+
+h4 {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    background-color: #4aaaa5;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Georgia;
+    padding: 5px;
+
+    }
+
+
+/*Connect with Me*/
+
+#CWME {
+	flex: 2;
+	background-color: white;
+	height: 20%;
+	border-radius: 4px;
+	margin-top: 45px;
+	margin-right: 30px;
+	padding: 10px 20px;
+	border-radius: 4px;
+}
+
+h3 {
+	text-align: center;
+	padding: 10px;
+	color: #4aaaa5;
+	border-bottom: 2px solid lightgrey;
+}
+
+
+#Social_Media {
+	display: block;
+	margin: 0 auto;
+	width: 130px;
+	height: 70px;
+}
+
+/*Contact Form*/
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
+}
+
+#Send_Message {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+#Message {
+	display: flex;
+	width: 100%;
+	height: flex;
+}
+
+/* Porfolio Pictures*/
+
+.Portfolio {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+img {
+	margin: 10px;
+}
+
+#the_footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-top: 5px solid #4aaaa5;
+	background-color: #666666;
+	color: lightgrey;
+	font-size: 12px;
+	font-family: Helvetica;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Media Query */
+
+/*640*/
+@media (max-width: 640px){
+
+    body {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #top_header {
+    	display: block;
+    	flex-wrap: wrap;
+    	width: 100%;
+    	margin: 0;
+    }
+
+    #name {
+    	width: 100%;
+        margin: 0;
+
+    }
+
+    #top_menu {
+    	flex: 1;
+    	text-align: center;
+    	width: 100%;
+    }
+
+    #main_section {
+    	display: flex;
+    	flex-wrap: wrap;
+    	width: 100%;
+    }
+
+    #Box1 {
+    	flex: 1;
+    	margin: 10px 45px;
+    }
+
+    #CWME {
+    	flex: 4;
+    	margin: 0px 45px;
+    	margin-bottom: 50px;
+    }
+
+     #the_footer {
+        position: fixed;
+        margin-top: 85%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
